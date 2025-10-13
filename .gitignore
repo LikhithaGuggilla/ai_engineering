@@ -3,6 +3,7 @@ data1/
 extra-data/
 class-notebooks/
 .env/
+qdrant_storage/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

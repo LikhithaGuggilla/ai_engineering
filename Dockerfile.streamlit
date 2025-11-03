@@ -15,7 +15,7 @@ COPY pyproject.toml uv.lock ./
 
 # Install dependencies
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen
+    uv lock --upgrade && uv sync --frozen
 
 # Copy application code
 COPY src/chatbot_ui ./src/chatbot_ui/
